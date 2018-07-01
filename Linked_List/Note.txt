@@ -1,0 +1,23 @@
+PGD 201
+Linked list lession with C++ 
+
+There is input file io.txt 
+
+Command line example:
+g++ -o create ll-create.cpp
+./create io.txt
+
+
+please study sequentially:
+
+1] ll-create.cpp
+2] ll-print.cpp
+3] ll-search.cpp
+4] ll-insert-before-after.cpp
+5] ll-delete.cpp
+
+
+
+
+
+
