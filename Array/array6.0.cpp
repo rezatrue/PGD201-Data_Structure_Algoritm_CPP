@@ -32,9 +32,9 @@ bool isItFull(int size, int filledTo)
 
 void makeSpaceAt(int *arr, int index, int &filledTo)
 {
-	for(int i = filledTo; i > index ; i--)
+	for(int i = filledTo+1; i > index ; i--)
 	{
-		arr[i+1] = arr[i]; 
+		arr[i] = arr[i-1]; 
 	}
 
 	filledTo++;
