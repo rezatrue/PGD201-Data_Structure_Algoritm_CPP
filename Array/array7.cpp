@@ -2,8 +2,8 @@
 
 using namespace std;
 /*
-	deleteing item from Array
-	updating / repalcing from Array
+	deleting item from Array
+	updating / replacing from Array
 
 */
 
@@ -120,50 +120,50 @@ bool isItEmpty(int filledTo)
 bool deleteElement(int *arr, int size, int &filledTo, int element)
 {
 	if(isItEmpty(filledTo)) return false;
-	
+
 	int index = search(arr, filledTo, element);
-	
+
 	if(index == -1)
 	{
 		cout << "Maalta array te nai" << endl;
 		return false;
 	}
-	
+
 	if(deleteAtIndex(arr, size, filledTo, index))
 	{
 		cout << "Deleted element: " << element << endl;
 	}
-	
+
 	return true;
 }
 
 bool deleteAllAppearenceOfElement(int *arr, int size, int &filledTo, int element)
 {
 	if(isItEmpty(filledTo)) return false;
-	
+
 	bool wasDeleted = false;
-	
+
 	while(1)
 	{
 		int index = search(arr, filledTo, element);
-		
+
 		if(index == -1) break;
-		
+
 		if(deleteAtIndex(arr, size, filledTo, index))
 		{
 			wasDeleted = true;
 		}
 	}
-	
+
 	if(wasDeleted) cout << "Deleted element: " << element << endl;
-	
+
 	return wasDeleted;
 }
 
 bool replace (int *arr, int size, int &filledTo, int elementOut, int elementIn)
 {
 	bool wasReplaced = false;
-	
+
 	for(int i=0; i<=filledTo; i++)
 	{
 		if(arr[i] == elementOut)
@@ -172,22 +172,22 @@ bool replace (int *arr, int size, int &filledTo, int elementOut, int elementIn)
 			wasReplaced = true;
 		}
 	}
-	
+
 	if(wasReplaced) cout << "Replaced" << endl;
-	
+
 	return wasReplaced;
 }
 
 int binarySearch(int *arr, int filledTo, int item)
 {
 	int index =-1;
-	
+
 	int low=0, high = filledTo;
-	
+
 	while(low<=high)
 	{
 		int mid = (low+high)/2;
-		
+
 		if(item == arr[mid])
 		{
 			index = mid;
@@ -202,7 +202,7 @@ int binarySearch(int *arr, int filledTo, int item)
 			high = mid-1;
 		}
 	}
-	
+
 	if(index !=-1)
 	{
 		while(index>0 && arr[index] == arr[index-1])
@@ -210,7 +210,7 @@ int binarySearch(int *arr, int filledTo, int item)
 			index--;
 		}
 	}
-	
+
 	return index;
 }
 
@@ -245,10 +245,10 @@ int main (void)
 	}
 	*/
 
-	/* 
-	
+	/*
+
 	// delete from last 25 items
-	
+
 	for (int i=0;i<25;i++)
 	{
 	if(deleteLast(arr, size, filledTo))
@@ -256,33 +256,33 @@ int main (void)
 	else  cout << "Failed" << endl;
 	}
 	*/
-	
+
 	/*
-	// delete element 
-	
-	if(deleteElement(arr, size, filledTo, element))	
+	// delete element
+
+	if(deleteElement(arr, size, filledTo, element))
 		cout << "Deleted" << endl;
 	else  cout << "Failed" << endl;
 	*/
-	
+
 	/*
 	// delete all simiar elements
-	if(deleteAllAppearenceOfElement(arr, size, filledTo, element))	
+	if(deleteAllAppearenceOfElement(arr, size, filledTo, element))
 		cout << "Deleted" << endl;
 	else  cout << "Failed" << endl;
 	*/
-	
+
 	/*
-	// Replace 
-	if(replace(arr, size, filledTo, elementOut, elementIn))	
+	// Replace
+	if(replace(arr, size, filledTo, elementOut, elementIn))
 		cout << "Asholei Replaced" << endl;
 	else  cout << "Not Replaced" << endl;
 	*/
-	
-	
+
+
 	// Binary Search
 	cout << "Binary Search "<< binarySearch(arr, filledTo, item) << endl;
-	
+
 
 	printArray(arr, size, filledTo);
 

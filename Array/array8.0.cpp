@@ -149,6 +149,29 @@ bool deleteElement(int element)
 }
 
 
+bool deleteAllAppearenceOfElement(int element)
+{
+	bool wasDeleted=false;
+	if(isItEmpty())
+	{
+		cout << "Array Empty" << endl;
+		return false;
+	}
+
+	while(1)
+	{
+		int index = search(element);
+		if(index == -1) break;
+		if(deleteAtIndex(index)) wasDeleted=true;
+	}
+
+	if(wasDeleted) cout << "Deleted all appearneces of element: " << element << endl;
+
+	return wasDeleted;
+}
+
+
+
 int main (void)
 {
 
@@ -187,7 +210,11 @@ int main (void)
 	else  cout << "Failed" << endl;
 	*/
 	
+	if(deleteAllAppearenceOfElement(itemToBeDeleted))	
+		cout << "Deleted" << endl;
+	else  cout << "Failed" << endl;
+	
 	printArray();
 	
-	deleteArray();
+	//deleteArray();
 }

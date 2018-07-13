@@ -8,8 +8,8 @@ using namespace std;
 	It has big storage size / user has control over it size
 	Less secured
 	uses shared memory
-	variable exist upto application life time
-	
+	variable exist up to application life time
+
 */
 
 void creatDynamicArray(int *arr, int size)
@@ -24,9 +24,9 @@ void destroyDynamicArray(int *arr)
 
 int main(void)
 {
-	
+
 	int *a;
-	
+
 	creatDynamicArray(a, 10);
 	cout << "p1" << endl;
 	//for(int i = 0; i < 10 ; i++) a[i] = i*10;

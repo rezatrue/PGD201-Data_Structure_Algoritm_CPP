@@ -1,12 +1,12 @@
 #include <iostream>
 
 using namespace std;
-// loacal vaiable must have limied size
+// local variable must have limited size
 // local variable placed in stack memory
 // stack size is limited for each application
 
 int main (void)
-{	
+{
 	int size = 4096*4096;
 	// local array huge size
 	double arrL[size];

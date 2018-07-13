@@ -5,13 +5,13 @@ using namespace std;
 int main(void)
 {
 	int number = 10;
-	/* local array 
+	/* local array
 	-Created in stack memory
-	-Has limited life time, exist with in scope/ funtion
+	-Has limited life time, exist with in scope/ function
 	-Must be small/ limited in size, as stack is limited for each application
-	-High level of sequrity
+	-High level of security
 	-Exclusive
-	-if overflowed application crashed [segmentation error]	
+	-if overflowed application crashed [segmentation error]
 	*/
 	int arrL[number];
 

@@ -2,10 +2,10 @@
 
 using namespace std;
 
-// problem with global vaiable
+// problem with global variable
 /*
-as value of n is not assigned, 
-array created with the garvadge value of n
+as value of n is not assigned,
+array created with the garbage value of n
 so size become unknown
 */
 

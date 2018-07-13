@@ -1,7 +1,7 @@
 #include <iostream>
 
 /*
- searing data & insert data after search item
+ searching data & insert data after search item
  insert data in the middle of an Array
 */
 
@@ -39,7 +39,7 @@ void makeSpaceAt(int *arr, int index, int &filledTo)
 		arr[i] = arr[i-1];
 	}
 
-	
+
 	arr[index] = -1;
 }
 
