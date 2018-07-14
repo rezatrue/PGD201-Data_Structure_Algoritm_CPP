@@ -143,11 +143,11 @@ int main(int argc, char *argv[])
 
 	//## use un comment any one of the following three line ##
 	
-	deleteFirst();
+	//deleteFirst();
 	
 	//deleteLast();
 	
-	//deleteList();
+	deleteList();
 
 	// print after dealiting 
 	cout << "After deleting item " << endl;

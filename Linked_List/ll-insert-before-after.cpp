@@ -187,9 +187,9 @@ int main(int argc, char *argv[])
 
 	//## use un comment any one of the following two line ##
 	
-	insertBeforeItem(45,42);
+	//insertBeforeItem(45,42);
 	
-	//insertAfterItem(45,48);
+	insertAfterItem(45,48);
 
 
 	// print after insert

@@ -8,7 +8,7 @@ int main(void){
 
 	string s = "Ali Reza";
 
-    s.clear();
+    	s.clear();
 
 	if(!s.empty())
         cout << s << endl;
